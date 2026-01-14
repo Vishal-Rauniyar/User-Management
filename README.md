@@ -1,70 +1,134 @@
-# Getting Started with Create React App
+# User Management Application (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive **User Management Application** built using **React** that
+demonstrates full CRUD (Create, Read, Update, Delete) functionality with
+data fetched from a public API. The project focuses on clean component
+design, proper state management, routing, and modern UI practices.
 
-## Available Scripts
+------------------------------------------------------------------------
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+-   Fetch and display users from a public API
+-   Create new users (simulated via API)
+-   Update existing user details
+-   Delete users
+-   Individual user profile page using routing
+-   Responsive and modern UI design
+-   Error handling for API requests
+-   Loading states for better user experience
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+------------------------------------------------------------------------
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠 Tech Stack
 
-### `npm test`
+-   React (JavaScript)
+-   React Router DOM
+-   HTML5
+-   CSS3
+-   JSONPlaceholder API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+------------------------------------------------------------------------
 
-### `npm run build`
+## 📁 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    src/
+     ├── api/
+     │    └── users.js
+     ├── components/
+     │    ├── UserForm.jsx
+     │    ├── UserList.jsx
+     │    ├── UserRow.jsx
+     │    └── Loader.jsx
+     ├── pages/
+     │    ├── Home.jsx
+     │    └── UserDetail.jsx
+     ├── App.jsx
+     ├── main.jsx
+     └── index.css
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+------------------------------------------------------------------------
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔄 CRUD Functionality
 
-### `npm run eject`
+### Fetch Users
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Users are fetched from the JSONPlaceholder API and displayed in a
+structured table.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Create User
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Users can be added using a form. A POST request is sent to simulate
+creation, and the UI is updated using local state.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Update User
 
-## Learn More
+Existing users can be edited with pre-filled data. Updates are simulated
+via PUT requests.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Delete User
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Users can be removed using a DELETE request. UI updates instantly using
+optimistic state updates.
 
-### Code Splitting
+> **Note:** JSONPlaceholder does not persist data. All write operations
+> are simulated.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+------------------------------------------------------------------------
 
-### Analyzing the Bundle Size
+## 🧭 Routing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+-   `/` → User list and management dashboard\
+-   `/user/:id` → Individual user profile page
 
-### Making a Progressive Web App
+Routing is implemented using React Router DOM.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+------------------------------------------------------------------------
 
-### Advanced Configuration
+## 🎨 UI & Design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+-   Clean, card-based layout
+-   Responsive design (desktop & mobile)
+-   Structured user profile page
+-   Avatar fallback using initials
+-   Consistent spacing and typography
 
-### Deployment
+------------------------------------------------------------------------
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## ▶️ Getting Started
 
-### `npm run build` fails to minify
+### 1. Clone the repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+``` bash
+git clone https://github.com/Vishal-Rauniyar/User-Management.git
+```
+
+### 2. Install dependencies
+
+``` bash
+npm install
+```
+
+### 3. Run the application
+
+``` bash
+npm run dev
+```
+
+------------------------------------------------------------------------
+
+## 📌 Future Improvements
+
+-   Search and filter functionality
+-   Pagination
+-   Toast notifications
+-   Dark mode
+-   Backend integration
+-   Authentication and authorization
+
+------------------------------------------------------------------------
+
+## 📄 License
+
+This project is open-source and intended for learning and demonstration
+purposes.
