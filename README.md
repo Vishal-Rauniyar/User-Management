@@ -1,5 +1,7 @@
 # User Management Application (React)
 
+🔗 Live Demo: https://user-management-applications.netlify.app/
+
 A responsive **User Management Application** built using **React** that
 demonstrates full CRUD (Create, Read, Update, Delete) functionality with
 data fetched from a public API. The project focuses on clean component
